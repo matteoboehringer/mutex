@@ -1,0 +1,18 @@
+language: java
+sudo: false
+install: true
+
+jdk:
+  - oraclejdk8
+
+script:
+  - ./gradlew
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.gradle'
+    - '.gradle'
+
+notifications:
+  email: false
